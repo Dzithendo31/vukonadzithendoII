@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Collage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="collage">
+        {% for image in images %}
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/' ~ image) }}" alt="Image {{ loop.index }}">
+        </div>
+        {% endfor %}
+    </div>
+    <script>
+        document.querySelectorAll('.image-container img').forEach(img => {
+            const randomPosition = () => {
+                const x = Math.random() * (window.innerWidth - img.parentElement.offsetWidth);
+                const y = Math.random() * (window.innerHeight - img.parentElement.offsetHeight);
+                return { x, y };
+            };
+
+            let moveImage = () => {
+                const { x, y } = randomPosition();
+                img.parentElement.style.transform = `translate(${x}px, ${y}px)`;
+                img.style.transform = `scale(${1 + Math.random() * 0.2})`; // Slight scale for movement
+            };
+
+            moveImage(); // Move immediately on load
+            setInterval(moveImage, 10000); // Adjust timing as needed
+        });
+
+    </script>
+</body>
+
+</html>

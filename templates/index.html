@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Italianno&display=swap" rel="stylesheet">
+    <title>vukona & dzithendo</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .background-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            /* Adjust height as needed */
+        }
+
+        .image-grid {
+            position: absolute;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            /* Desktop: 13 columns */
+            grid-template-rows: repeat(3, 1fr);
+            /* Desktop: 3 rows */
+            width: 100%;
+            height: 100vh;
+            /* Full viewport height */
+            gap: 0;
+            /* No gap between images */
+            opacity: 0.35;
+            /* Semi-transparent */
+            animation: moveUpDown 80s infinite;
+            z-index: -1;
+            /* Ensure the background stays behind */
+
+        }
+
+        .overlay {
+            position: fixed;
+            /* Keep the overlay fixed */
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            overflow-y: scroll;
+            /* Enable vertical scrolling within the overlay */
+            height: 100vh;
+            /* Full height to allow for scrolling */
+            width: 100%;
+            /* Adjust width as needed */
+            max-width: 100%;
+            /* Keep the overlay centered with a max-width */
+            z-index: 10;
+
+            /* Hide the scrollbar */
+            scrollbar-width: none;
+            /* For Firefox */
+            -ms-overflow-style: none;
+            /* For Internet Explorer and Edge */
+            align-items: center;
+
+        }
+
+        .overlay::-webkit-scrollbar {
+            display: none;
+            /* For Chrome, Safari, and Opera */
+        }
+
+        .card {
+            background: rgba(48, 48, 48, 1);
+            /* Light background with transparency */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            /* Adjust as needed */
+            /* Additional styles for cards if needed */
+            margin: 0px;
+        }
+
+        .card1 {
+            background: rgba(48, 48, 48, 1);
+            /* Light background with transparency */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .qouteOwn {
+            text-align: center;
+            color: white;
+            font-family: "Italianno", cursive;
+            margin: 0px 50px;
+        }
+
+        .ctrImg {
+            margin: 0px;
+            margin-bottom: 30px;
+            width: 50%;
+            /* border-radius: 8px; */
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensures the images cover their grid cell */
+        }
+
+        .head {
+            font-family: "Island Moments", cursive;
+            font-size: 3.5em;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            width: 100%;
+            color: white;
+        }
+
+        .dates {
+            font-family: "Island Moments", cursive;
+            font-size: 2.2em;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            color: white;
+        }
+
+        .divdate {
+            margin-bottom: 30px;
+        }
+
+
+
+        @keyframes moveUpDown {
+            0% {
+                transform: translateY(0);
+                /* Start position */
+            }
+
+            50% {
+                transform: translateY(-1000px);
+                /* Move up 20px */
+            }
+
+            100% {
+                transform: translateY(0);
+                /* Return to original position */
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .image-grid {
+                grid-template-columns: repeat(9, 1fr);
+                /* Tablet: 9 columns */
+                grid-template-rows: repeat(5, 1fr);
+                /* Tablet: 5 rows */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: repeat(5, 1fr);
+                /* Mobile: 5 columns */
+                grid-template-rows: repeat(8, 1fr);
+                /* Mobile: 8 rows */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-grid {
+                grid-template-columns: repeat(3, 1fr);
+                /* Small Mobile: 3 columns */
+                grid-template-rows: repeat(13, 1fr);
+                /* Small Mobile: 13 rows */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="image-grid">
+            {% for image in images %}
+            <img src="{{ url_for('static', filename='images/' ~ image) }}" alt="Image {{ loop.index }}">
+            {% endfor %}
+        </div>
+        <div class="overlay">
+            <!-- <div>
+                <p class="head">vukona & dzithendo II</p>
+            </div> -->
+            <div class="card1">
+                <p class="head">vukona & dzithendo II</p>
+                <!-- Card content here -->
+                <img class="ctrImg" src="{{ url_for('static', filename='images/img42.jpg') }}" alt="Start">
+                <p class="qouteOwn">Love is not about how many days, months, or years you've been together. It's all
+                    about how much you love each other every single day.</p>
+            </div>
+            <div class="card">
+                
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3w1xg3rt6XZ8GLVuzmW5Vn?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="card" style="margin-bottom: 30px;">
+                <p class="dates">12 September 2024</p>
+                <p class="dates">20H00(19H30 pickup)</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

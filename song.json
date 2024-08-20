@@ -1,0 +1,16 @@
+{
+    "songs" : [
+    {
+        "id": 1,
+        "name":"Speak",
+        "artist":"Lloyiso",
+        "songArt": "https://www.jonathan-petitcolas.com/img/posts/ascii-art-converter/homer.png"
+    },
+    {
+        "id": 2,
+        "name":"Speak",
+        "artist":"Lloyiso",
+        "songArt": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fopen.spotify.com%2Falbum%2F3ZSfzqjAgOZv7S23jASBdt&psig=AOvVaw3I5xtu36kzKhXH3NJEpkZY&ust=1724193573177000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDkyt-PgogDFQAAAAAdAAAAABAE"
+    }
+    ]
+}

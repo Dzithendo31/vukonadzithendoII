@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+    <title>Vukona & Dzithendo II</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+        div {
+            text-align: center;
+            max-width: 100%;
+            padding: 20px;
+            margin: 50px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        .head {
+            font-family: "Island Moments", cursive;
+            font-size: 7.5em;
+            padding: 0px;
+            margin: 0px;
+        }
+        .date {
+            font-family: "Island Moments", cursive;
+            font-size: 2.2em;
+            padding: 0px;
+            margin: 0px;
+        }
+        .quote {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.0em;
+            font-style: italic;
+            line-height: 1.5;
+            padding: 0px 15%;
+        }
+        .love{
+            width: 20%;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .head {
+                font-size: 4.5em;
+            }
+            .date {
+                font-size: 1.8em;
+            }
+            .quote {
+                font-size: 0.9em;
+                padding: 0px 10%;
+            }
+            .love {
+                width: 40%;
+            }
+            div {
+                margin: 20px;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .head {
+                font-size: 3em;
+            }
+            .date {
+                font-size: 1.5em;
+            }
+            .quote {
+                font-size: 0.6em;
+                padding: 0px 5%;
+            }
+            .love {
+                width: 45%;
+            }
+            div {
+                margin: 10px;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img class="love" src="xapfede.svg" alt="love">
+        <!-- <img src="{{ url_for('static', filename='img/your-image.svg') }}" alt="SVG Image"> -->
+        <p class="head">vukona & dzithendo II</p>
+        <p class="date">Live on 01-09-2024</p>
+        <p class="quote">“And I'd choose you, in a hundred lifetimes, in a hundred worlds, in any version of reality, I'd find you and I'd choose you.” - Kiersten White</p>
+    </div>
+</body>
+</html>
