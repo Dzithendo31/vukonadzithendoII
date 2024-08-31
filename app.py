@@ -1,7 +1,7 @@
 import json
 from flask import Flask, render_template
 import random
-import datetime
+from datetime import datetime, timedelta
 app = Flask(__name__)
 
 @app.route('/')
@@ -14,9 +14,13 @@ def index():
     songs = data['songs']
     qoutes = data['qoutes']
 
-    today = datetime.date.today()
-    # Format the date as MMDD (e.g., 0312 for March 12)
-    date_str = today.strftime('%d')
+    now = datetime.now()
+
+# Add two hours to the current time
+    adjusted_time = now + timedelta(hours=2)
+
+# Format the adjusted date as DDMM
+    date_str = adjusted_time.strftime('%d')
     dayImg = f'img{date_str:02}.jpg'
     songId = int(date_str)
     song = next(song for song in songs if song['id'] == songId)
