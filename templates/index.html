@@ -1,101 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
-    <title>Vukona & Dzithendo II</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Italianno&display=swap" rel="stylesheet">
+    <title>vukona & dzithendo</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        body,
+        html {
             margin: 0;
-            background-color: #ffffff;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
         }
-        div {
-            text-align: center;
-            max-width: 100%;
+
+        .background-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            /* Adjust height as needed */
+        }
+
+        .image-grid {
+            position: absolute;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            /* Desktop: 13 columns */
+            grid-template-rows: repeat(3, 1fr);
+            /* Desktop: 3 rows */
+            width: 100%;
+            height: 100vh;
+            /* Full viewport height */
+            gap: 0;
+            /* No gap between images */
+            opacity: 0.35;
+            /* Semi-transparent */
+            animation: moveUpDown 80s infinite;
+            z-index: -1;
+            /* Ensure the background stays behind */
+
+        }
+
+        .overlay {
+            position: fixed;
+            /* Keep the overlay fixed */
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
             padding: 20px;
-            margin: 50px;
-            background-color: #ffffff;
-            border-radius: 10px;
+            overflow-y: scroll;
+            /* Enable vertical scrolling within the overlay */
+            height: 100vh;
+            /* Full height to allow for scrolling */
+            width: 100%;
+            /* Adjust width as needed */
+            max-width: 100%;
+            /* Keep the overlay centered with a max-width */
+            z-index: 10;
+
+            /* Hide the scrollbar */
+            scrollbar-width: none;
+            /* For Firefox */
+            -ms-overflow-style: none;
+            /* For Internet Explorer and Edge */
+            align-items: center;
+            
+
         }
-        .head {
-            font-family: "Island Moments", cursive;
-            font-size: 7.5em;
-            padding: 0px;
+
+        .overlay::-webkit-scrollbar {
+            display: none;
+            /* For Chrome, Safari, and Opera */
+        }
+        
+
+        .card {
+            /* background: rgba(48, 48, 48, 1); */
+            background: rgb(255, 255, 255);
+            /* Light background with transparency */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            /* Adjust as needed */
+            /* Additional styles for cards if needed */
             margin: 0px;
         }
-        .date {
+
+        .card1 {
+            /* background: rgba(48, 48, 48, 1); */
+            background: rgb(255, 255, 255);
+            /* Light background with transparency */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .qouteOwn {
+            text-align: center;
+            /* color: white; */
+            color: rgb(34, 34, 34);
+            font-family: "Italianno", cursive;
+            margin: 0px 50px;
+        }
+
+        .ctrImg {
+            margin: 0px;
+            margin-bottom: 30px;
+            width: 50%;
+            /* border-radius: 8px; */
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensures the images cover their grid cell */
+        }
+
+        .head {
+            font-family: "Island Moments", cursive;
+            font-size: 3.5em;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            width: 100%;
+            /* color: white; */
+            color: rgb(34, 34, 34);
+        }
+
+        .dates {
             font-family: "Island Moments", cursive;
             font-size: 2.2em;
             padding: 0px;
             margin: 0px;
+            text-align: center;
+            /* color: white; */
+            color: rgb(34, 34, 34);
         }
-        .quote {
+        .res{
             font-family: 'Times New Roman', Times, serif;
-            font-size: 1.0em;
-            font-style: italic;
-            line-height: 1.5;
-            padding: 0px 15%;
+            font-size: .5em;
+            color: rgb(34, 34, 34);
+            text-align: center;
+            margin: 0px;
         }
-        .love{
-            width: 20%;
+
+        .songOD {
+            font-family: "Island Moments", cursive;
+            font-size: 2.2em;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            /* color: white; */
+            color: rgb(34, 34, 34);
         }
-        /* Mobile responsiveness */
+
+        .divdate {
+            margin-bottom: 30px;
+        }
+
+
+
+        @keyframes moveUpDown {
+            0% {
+                transform: translateY(0);
+                /* Start position */
+            }
+
+            50% {
+                transform: translateY(-800px);
+                /* Move up 20px */
+            }
+
+            100% {
+                transform: translateY(0);
+                /* Return to original position */
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .image-grid {
+                grid-template-columns: repeat(9, 1fr);
+                /* Tablet: 9 columns */
+                grid-template-rows: repeat(5, 1fr);
+                /* Tablet: 5 rows */
+            }
+        }
+
         @media (max-width: 768px) {
-            .head {
-                font-size: 4.5em;
-            }
-            .date {
-                font-size: 1.8em;
-            }
-            .quote {
-                font-size: 0.9em;
-                padding: 0px 10%;
-            }
-            .love {
-                width: 40%;
-            }
-            div {
-                margin: 20px;
-                padding: 10px;
+            .image-grid {
+                grid-template-columns: repeat(5, 1fr);
+                /* Mobile: 5 columns */
+                grid-template-rows: repeat(8, 1fr);
+                /* Mobile: 8 rows */
             }
         }
 
         @media (max-width: 480px) {
+            .image-grid {
+                grid-template-columns: repeat(3, 1fr);
+                /* Small Mobile: 3 columns */
+                grid-template-rows: repeat(13, 1fr);
+                /* Small Mobile: 13 rows */
+            }
+            .card1{
+                width: 300px;
+            }
+            .card {
+                width: 300px;
+            }
+            .qouteOwn {
+                margin: 0px 20px;
+            }
             .head {
-                font-size: 3em;
-            }
-            .date {
-                font-size: 1.5em;
-            }
-            .quote {
-                font-size: 0.6em;
-                padding: 0px 5%;
-            }
-            .love {
-                width: 45%;
-            }
-            div {
-                margin: 10px;
-                padding: 5px;
+                font-size: 2.5em;
             }
         }
     </style>
 </head>
+
 <body>
-    <div>
-        <img class="love" src="xapfede.svg" alt="love">
-        <!-- <img src="{{ url_for('static', filename='img/your-image.svg') }}" alt="SVG Image"> -->
-        <p class="head">vukona & dzithendo II</p>
-        <p class="date">Live on 01-09-2024</p>
-        <p class="quote">“And I'd choose you, in a hundred lifetimes, in a hundred worlds, in any version of reality, I'd find you and I'd choose you.” - Kiersten White</p>
+    <div class="background-container">
+        <div class="image-grid">
+            {% for image in images %}
+            <img src="{{ url_for('static', filename='images/' ~ image) }}" alt="Image {{ loop.index }}">
+            {% endfor %}
+        </div>
+        <div class="overlay">
+            <!-- <div>
+                <p class="head">vukona & dzithendo II</p>
+            </div> -->
+            <div class="card1">
+                <p class="head">vukona & dzithendo II</p>
+
+                <!-- Card content here -->
+                <img class="ctrImg" src="{{ url_for('static', filename='images/' ~ dayImg) }}" alt="Start">
+                <p class="qouteOwn">{{qoute}}</p>
+                <p class="dates">12 September 2024 | 18h00</p>
+                <p class="res">NITIDA WINEFARM, CASSIA RESTUARANT</p>
+            </div>
+            <div class="card">
+                <p class="songOD">Song of the day</p>
+                <iframe style="border-radius:12px"
+                    src={{songLink}} width="100%"
+                    height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+                <p class="qouteOwn" style="margin-bottom: 30px;">{{songMessage}}</p>
+            </div>
+        </div>
     </div>
+
+
 </body>
+
 </html>

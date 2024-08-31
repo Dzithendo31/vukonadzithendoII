@@ -1,16 +1,98 @@
 {
-    "songs" : [
-    {
-        "id": 1,
-        "name":"Speak",
-        "artist":"Lloyiso",
-        "songArt": "https://www.jonathan-petitcolas.com/img/posts/ascii-art-converter/homer.png"
-    },
-    {
-        "id": 2,
-        "name":"Speak",
-        "artist":"Lloyiso",
-        "songArt": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fopen.spotify.com%2Falbum%2F3ZSfzqjAgOZv7S23jASBdt&psig=AOvVaw3I5xtu36kzKhXH3NJEpkZY&ust=1724193573177000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDkyt-PgogDFQAAAAAdAAAAABAE"
-    }
+    "songs": [
+        {
+            "id": 1,
+            "name": "Ndi a ni funa",
+            "link": "https://open.spotify.com/embed/track/2N1TKyUtiutH2AqBpF98t1?utm_source=generator",
+            "message" : "I love you More"
+        },
+        {
+            "id": 2,
+            "name": "I Speak Jesus",
+            "link": "https://open.spotify.com/embed/track/467ywsenaNywwCuYhmBb5N?utm_source=generatorr",
+            "message" : "In anything and everything you do My love."
+        },
+        {
+            "id": 3,
+            "name": "Ndo Mu Wana",
+            "link": "https://open.spotify.com/embed/track/5rSRIyHRfQmFDHlMNcBzbI?utm_source=generator",
+            "message" : "Found You :)"
+        },
+        {
+            "id": 4,
+            "name": "Caiphus Song",
+            "link": "https://open.spotify.com/embed/track/6GMpbs7YtwyJAIZ8On2tgQ?utm_source=generator",
+            "message" : "Can't wait to Play this one..."
+        },
+        {
+            "id": 2,
+            "name": "Remedy",
+            "link": "https://open.spotify.com/embed/track/1zZh6zTXcDgvN0C6S1G4gU?utm_source=generator",
+            "message" : ""
+        },
+        {
+            "id": 3,
+            "name": "Why I love You",
+            "link": "https://open.spotify.com/embed/track/0g1UzWISKHt7elmoM9TsAh?utm_source=generator",
+            "message" : ""
+        },
+        {
+            "id": 4,
+            "name": "What I would Say",
+            "link": "https://open.spotify.com/embed/track/2RIQcWNRhgp5wbnwZ2mLXN?utm_source=generator",
+            "message" : ""
+        },
+        {
+            "id": 5,
+            "name": "Seasons",
+            "link": "https://open.spotify.com/embed/track/3gmKj3ulv2GGeW4JkmphHE?utm_source=generator",
+            "message" : ""
+        },
+        {
+            "id": 6,
+            "name": "I Miss You",
+            "link": "https://open.spotify.com/embed/track/6NdG17SJBXKJeYS67f7E74?utm_source=generator",
+            "message" : ""
+        },
+        {
+            "id": 7,
+            "name": "Intliziyo",
+            "link": "https://open.spotify.com/embed/track/0CZjloNcJAOdtB6tsTGUi6?utm_source=generator",
+            "message" : ""
+        },
+        {
+            "id": 8,
+            "name": "The Blessing",
+            "link": "https://open.spotify.com/embed/track/5O306r2a9Nl7rm5ZlaTqka?utm_source=generator",
+            "message" : ""
+        },
+        {
+            "id": 9,
+            "name": "Best Part",
+            "link": "https://open.spotify.com/embed/track/4OBZT9EnhYIV17t4pGw7ig?utm_source=generator",
+            "message" : ""
+        },
+        {
+            "id": 10,
+            "name": "Where do we go",
+            "link": "https://open.spotify.com/embed/track/3qzIa0ZygfJeIVA6UT1IVp?utm_source=generator",
+            "message" : ""
+        },
+        {
+            "id": 31,
+            "name": "Mamela",
+            "link": "https://open.spotify.com/embed/track/3mnL4RKOwb5dlzCuaZjzPG?utm_source=generator",
+            "message" : "I jusst know you love this one, and I love it now."
+        }
+    ],
+    "qoutes":[
+        {
+            "id":1,
+            "koute":"I Love you more, I love you more than the most exciting days we've had(and to come), I love you more than the boring days we have, I love you more in each season and day we go through as an item, I love you more than the gift we've brought for each other, I love you more than the ‘Love' we've made, I love you more Konie"
+        },
+        {
+            "id":31,
+            "koute":"I Love you more, I love you more than the most exciting days we've had(and to come), I love you more than the boring days we have, I love you more in each season and day we go through as an item, I love you more than the gift we've brought for each other, I love you more than the ‘Love' we've made, I love you more Konie"
+        }
     ]
 }
