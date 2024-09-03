@@ -25,61 +25,49 @@
             "message" : "Can't wait to Play this one..."
         },
         {
-            "id": 2,
+            "id": 5,
             "name": "Remedy",
             "link": "https://open.spotify.com/embed/track/1zZh6zTXcDgvN0C6S1G4gU?utm_source=generator",
             "message" : "Just had to put an Adele song"
         },
         {
-            "id": 3,
+            "id": 6,
             "name": "Why I love You",
             "link": "https://open.spotify.com/embed/track/0g1UzWISKHt7elmoM9TsAh?utm_source=generator",
             "message" : "This was my favourite from the My love Playlist you made"
         },
         {
-            "id": 4,
+            "id": 7,
             "name": "What I would Say",
             "link": "https://open.spotify.com/embed/track/2RIQcWNRhgp5wbnwZ2mLXN?utm_source=generator",
             "message" : "No words on this one"
         },
         {
-            "id": 5,
+            "id": 8,
             "name": "Seasons",
             "link": "https://open.spotify.com/embed/track/3gmKj3ulv2GGeW4JkmphHE?utm_source=generator",
             "message" : "Good, bad, fun, boring, sad, happy, I'll be there"
         },
         {
-            "id": 6,
+            "id": 9,
             "name": "I Miss You",
             "link": "https://open.spotify.com/embed/track/6NdG17SJBXKJeYS67f7E74?utm_source=generator",
             "message" : "I guess am the clingy now one, yeahhhhh"
         },
         {
-            "id": 7,
-            "name": "Intliziyo",
-            "link": "https://open.spotify.com/embed/track/0CZjloNcJAOdtB6tsTGUi6?utm_source=generator",
-            "message" : ""
-        },
-        {
-            "id": 8,
+            "id": 10,
             "name": "The Blessing",
             "link": "https://open.spotify.com/embed/track/5O306r2a9Nl7rm5ZlaTqka?utm_source=generator",
             "message" : "My short prayer for you"
         },
         {
-            "id": 9,
+            "id": 11,
             "name": "Best Part",
             "link": "https://open.spotify.com/embed/track/4OBZT9EnhYIV17t4pGw7ig?utm_source=generator",
             "message" : "Hiiiii"
         },
         {
-            "id": 10,
-            "name": "Where do we go",
-            "link": "https://open.spotify.com/embed/track/3qzIa0ZygfJeIVA6UT1IVp?utm_source=generator",
-            "message" : ""
-        },
-        {
-            "id": 31,
+            "id": 12,
             "name": "Mamela",
             "link": "https://open.spotify.com/embed/track/3mnL4RKOwb5dlzCuaZjzPG?utm_source=generator",
             "message" : "I jusst know you love this one, and I love it now."
@@ -107,8 +95,32 @@
             "koute":"We will continue to teach and learn from one another, offering guidance and support as we grow together. We'll help each other improve, correcting mistakes with kindness and understanding"
         },
         {
-            "id":31,
-            "koute":"I Love you more, I love you more than the most exciting days we've had(and to come), I love you more than the boring days we have, I love you more in each season and day we go through as an item, I love you more than the gift we've brought for each other, I love you more than the ‘Love' we've made, I love you more Konie"
+            "id":6,
+            "koute":"Think about you always, stress about you always, but above all I love you always"
+        },
+        {
+            "id":7,
+            "koute":"One of the things I've grown to love is watching how happy you get when you receive a gift—it feels like it's your love language. I can't wait to keep giving you more and more until it feels completely natural to you."
+        },
+        {
+            "id":8,
+            "koute":"After two years together, I've learned that love isn't just about the grand gestures or the big moments; it's about the small, everyday things we do for each other that make our love stronger. Here's to us, to every moment we've shared, and to the countless more we'll create together."
+        },
+        {
+            "id":9,
+            "koute":"After two years together, I've learned that love isn't just about the grand gestures or the big moments; it's about the small, everyday things we do for each other that make our love stronger. Here's to us, to every moment we've shared, and to the countless more we'll create together."
+        },
+        {
+            "id":10,
+            "koute":"After two years together, I've learned that love isn't just about the grand gestures or the big moments; it's about the small, everyday things we do for each other that make our love stronger. Here's to us, to every moment we've shared, and to the countless more we'll create together."
+        },
+        {
+            "id":11,
+            "koute":"After two years together, I've learned that love isn't just about the grand gestures or the big moments; it's about the small, everyday things we do for each other that make our love stronger. Here's to us, to every moment we've shared, and to the countless more we'll create together."
+        },
+        {
+            "id":12,
+            "koute":"Happy 2nd Year Annniversary Baby."
         }
     ]
 }
